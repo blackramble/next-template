@@ -7,11 +7,11 @@ import { useEffect } from 'react'
 
 export default function Home() {
     const dispatch = useDispatch()
-    const aa = useSelector(selectAuthState)
-    useEffect(() => {
-        console.log(aa)
-        console.log(setAuthState)
-    }, []);
+    // const aa = useSelector(selectAuthState)
+    // useEffect(() => {
+    //     console.log(aa)
+    //     console.log(setAuthState)
+    // }, []);
     return (
         <div className={styles.container}>
             <Head>
@@ -21,9 +21,9 @@ export default function Home() {
             </Head>
 
 
-            <button onClick={() => {
+            {/* <button onClick={() => {
                 dispatch(setAuthState(!aa))
-            }}>aaaaa</button>
+            }}>aaaaa</button> */}
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     Welcome to <a href="https://nextjs.org">Next.js!</a>
